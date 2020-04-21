@@ -29,6 +29,7 @@
         "gatsby-source-filesystem": "^2.0.20",
         "gatsby-transformer-remark": "^2.2.5",
         "gatsby-transformer-sharp": "^2.1.17",
+        "gh-pages": "^2.2.0",
         "juniper-js": "^0.1.0",
         "node-sass": "^4.11.0",
         "prismjs": "^1.15.0",
@@ -44,7 +45,8 @@
         "dev": "gatsby develop",
         "lint": "eslint **",
         "clear": "rm -rf .cache",
-        "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+        "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public"
     },
     "devDependencies": {
         "browser-monads": "^1.0.0",
@@ -52,6 +54,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ines/course-starter-python"
+        "url": "https://github.com/iammosespaulr/course_starter"
     }
 }
